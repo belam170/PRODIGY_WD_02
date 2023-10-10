@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background: #000;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.stopwatch-time p{
+  font-size: 100px;
+  color: #fff;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.buttons .button1{
+  margin-left: 5px;
+  display: inline-block;
+  padding: 15px 35px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.buttons .button2{
+  margin-left: 5px;
+  display: inline-block;
+  padding: 15px 35px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #b71818;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.buttons button1:hover {background-color: #3e8e41}
+.buttons .button2:hover {background-color: #7e0808;}
+
+.buttons .button1:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.buttons .button2:active{
+  background-color: #7e0808;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
